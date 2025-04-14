@@ -1,16 +1,8 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 import altair as alt
-import pickle
-import nbformat
-from nbconvert import PythonExporter
-import joblib
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-
 
 st.set_page_config(layout="wide", page_title="SUD Risk Analyzer")
 st.title("💊 SUD Risk Analysis Dashboard")
