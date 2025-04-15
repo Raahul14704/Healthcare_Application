@@ -139,7 +139,7 @@ if uploaded_file is not None:
             data = pd.get_dummies(final_df, columns=oneHotCols)
 
             # Define features and labels
-            X = data.drop(["sud risk", "Id", "CITY", "STATE", "AGE", "AGE GROUP"], axis=1)
+            X = data.drop(["sud risk", "Id", "CITY", "STATE", "AGE GROUP"], axis=1)
             y = data["sud risk"]
 
             # Split the data
@@ -184,7 +184,8 @@ if uploaded_file is not None:
                         "Glucose [Mass/volume] in Blood": glucose,
                         "Cholesterol [Mass/volume] in Serum or Plasma": cholesterol,
                         "Systolic Blood Pressure": systolic,
-                        "Body mass index (BMI) [Ratio]": bmi
+                        "Body mass index (BMI) [Ratio]": bmi,
+                        "Age": Age
                     }
 
                     user_df = pd.DataFrame([user_input])
