@@ -169,6 +169,7 @@ if uploaded_file is not None:
                     cholesterol = st.number_input("Total Cholesterol (mg/dL)", min_value=0.0)
                     systolic = st.number_input("Systolic BP (mmHg)", min_value=0.0)
                     bmi = st.number_input("BMI", min_value=0.0)
+                    age = st.number_input("AGE", min_value=1)
 
                 # Submit button inside the form
                 submitted = st.form_submit_button("🔍 Predict")
@@ -185,7 +186,7 @@ if uploaded_file is not None:
                         "Cholesterol [Mass/volume] in Serum or Plasma": cholesterol,
                         "Systolic Blood Pressure": systolic,
                         "Body mass index (BMI) [Ratio]": bmi,
-                        "AGE": Age
+                        "AGE": age
                     }
 
                     user_df = pd.DataFrame([user_input])
