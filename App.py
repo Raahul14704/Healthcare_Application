@@ -186,7 +186,8 @@ if uploaded_file is not None:
                         "Cholesterol [Mass/volume] in Serum or Plasma": cholesterol,
                         "Systolic Blood Pressure": systolic,
                         "Body mass index (BMI) [Ratio]": bmi,
-                        "AGE": age
+                        "Age": age
+                        
                     }
 
                     user_df = pd.DataFrame([user_input])
